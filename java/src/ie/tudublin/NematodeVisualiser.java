@@ -24,16 +24,19 @@ public class NematodeVisualiser extends PApplet {
 	}
 
 	public void loadNematodes() {
+
+		ArrayList<Nematode> Nematodes = new ArrayList<Nematode>();
+
 		Table table = loadTable("nematodes.csv", "header");
 		for (TableRow row : table.rows()) {
-			row.getString("name");
-			row.getInt("length");
-			row.getInt("limbs");
-			row.getString("gender");
-			row.getInt("eyes");
+			Nematode nema = new Nematode(row);
+			Nematodes.add(nema);
 		}
+
+		
 	}
 
 	public void draw() {
+
 	}
 }
