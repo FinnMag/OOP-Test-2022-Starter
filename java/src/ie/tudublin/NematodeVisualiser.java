@@ -21,7 +21,8 @@ public class NematodeVisualiser extends PApplet {
 		}
 
 		if (keyCode == RIGHT) {
-			nemaOption++;
+			if (nemaOption != 12)
+				nemaOption++;
 		}
 	}
 
