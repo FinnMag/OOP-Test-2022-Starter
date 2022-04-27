@@ -56,6 +56,10 @@ public class Nematode extends PApplet {
                 + name + "]";
     }
 
+    public static void main () {
+
+    }
+
 
 }
 
