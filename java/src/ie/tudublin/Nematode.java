@@ -5,11 +5,11 @@ import processing.data.TableRow;
 
 public class Nematode extends PApplet {
 
-    private String name;
-    private float length;
-    private int limbs;
-    private String gender;
-    private int eyes;
+    public String name;
+    public float length;
+    public int limbs;
+    public String gender;
+    public int eyes;
 
     public Nematode(String name, float length, int limbs, String gender, int eyes) {
         this.name = name;
@@ -72,7 +72,8 @@ public class Nematode extends PApplet {
     public String toString() {
         return "Nematode [eyes=" + eyes + ", gender=" + gender + ", length=" + length + ", limbs=" + limbs + ", name="
                 + name + "]";
-    }
+    }   
+
 
     public static void main() {
         
